@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/actionLog.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+          <img src="../asset/image/logo.png" alt="" />
+          <p>DEVICE MANAGER</p>
+        </div>
+        <div class="avatar">
+          <img src="../asset/image/profile-1.jpg" alt="" />
+          <p>Hello, John</p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="http://127.0.0.1:5500/page/dashbroad.html">
+          <span class="material-icons">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="http://127.0.0.1:5500/page/actionLog.html" class="">
+          <span class="material-icons">person_outline</span>
+          <h3>Logs</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons">settings</span>
+          <h3>Setting</h3>
+        </a>
+        <a href="http://127.0.0.1:5500/page/login.html">
+          <span class="material-icons">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+      <div class="main">
+        <div class="header_title">Action Logs</div>
+        <div class="header_input">
+          <input type="text" placeholder="name" id="search-input" />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="table">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Device ID</th>
+                <th>Name</th>
+                <th>Action</th>
+                <th>Dates</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </body>
+  <script src="../database/data.js"></script>
+  <script src="../script/actionLog.js"></script>
+</html>
