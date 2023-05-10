@@ -7,10 +7,10 @@ var myChart = new Chart(ctx, {
             label: 'POWER CONSUMPTION',
             data: [50/290, 60/290 , 80/290, 100/290],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)'
+                'rgba(255, 99, 132, 50)',
+                'rgba(54, 162, 235, 50)',
+                'rgba(255, 206, 86, 50)',
+                'rgba(75, 192, 192, 50)'
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
